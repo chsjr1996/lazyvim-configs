@@ -13,6 +13,7 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Tabs/buffers
 keymap.set("n", "<M-c>", ":bw<CR>", opts)
+keymap.set("n", "<C-q>", ":q<CR>", opts)
 
 -- Split window
 keymap.set("n", "<M-x>", ":split<Return>", opts)
