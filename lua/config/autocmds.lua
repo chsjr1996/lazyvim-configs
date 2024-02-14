@@ -17,3 +17,9 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
     vim.cmd("setlocal ts=4 sw=4")
   end
 })
+
+vim.api.nvim_create_autocmd({ "VimLeave" }, {
+  callback = function()
+    vim.cmd("set guicursor=a:hor20")
+  end
+})
