@@ -4,3 +4,4 @@
 
 -- Disable autoformat
 vim.g.autoformat = false
+vim.g.netrw_browsex_viewer = 'flatpak-spawn --host xdg-open'
