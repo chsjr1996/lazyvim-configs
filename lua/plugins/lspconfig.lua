@@ -5,7 +5,11 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        intelephense = {},
+        intelephense = {
+          init_options = {
+            globalStoragePath = os.getenv('HOME') .. '/.local/share/intelephense'
+          }
+        },
         tsserver = {},
         tailwindcss = {},
         eslint = {}

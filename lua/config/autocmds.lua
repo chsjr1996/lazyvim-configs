@@ -31,17 +31,3 @@ vim.api.nvim_create_autocmd({ "VimLeave" }, {
   end
 })
 
--- Lumen
-vim.api.nvim_create_autocmd({ "User" }, {
-  pattern = "LumenLight",
-  callback = function()
-    --print('light now...')
-  end
-})
-
-vim.api.nvim_create_autocmd({ "User" }, {
-  pattern = "LumenDark",
-  callback = function()
-    --print('dark now...')
-  end
-})

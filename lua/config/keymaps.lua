@@ -19,12 +19,11 @@ keymap.set("n", "<C-q>", ":q<CR>", opts)
 keymap.set("n", "<M-x>", ":split<Return>", opts)
 keymap.set("n", "<M-v>", ":vsplit<Return>", opts)
 
--- Telescope
-keymap.set("n", "<M-f>", ":Telescope current_buffer_fuzzy_find case_mode=ignore_case<cr>", opts)
-keymap.set("n", "<C-p>", ":Telescope find_files<cr>", opts)
-keymap.set("n", "<M-p>", ":Telescope file_browser path=%:p:h<cr>", opts)
-keymap.set("n", "<M-s>", ":Telescope lsp_document_symbols<cr>", opts)
-keymap.set("n", "<Tab>", ":Telescope buffers<cr>", opts)
+-- fzf lua
+keymap.set("n", "<M-f>", ":FzfLua grep_curbuf<cr>", opts)
+keymap.set("n", "<C-p>", ":FzfLua files<cr>", opts)
+keymap.set("n", "<M-s>", ":FzfLua lsp_document_symbols<cr>", opts)
+keymap.set("n", "<Tab>", ":FzfLua buffers<cr>", opts)
 
 -- Dot not yank
 keymap.set("n", "x", '"_x', opts)
